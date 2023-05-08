@@ -1,0 +1,12 @@
+<h1>soy register</h1>
+{{!-- crear un formulario que haga post a users y guarde usuario 
+con nombre email y contraseña--}}
+<form action="/users" method="POST">
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" id="nombre">
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email">
+  <label for="password">Contraseña</label>
+  <input type="password" name="password" id="password">
+  <button type="submit">Enviar</button>
+</form>
