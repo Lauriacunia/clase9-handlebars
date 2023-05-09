@@ -5,6 +5,7 @@ const exphbs = require("express-handlebars");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(__dirname + "/public"));
 
 app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
